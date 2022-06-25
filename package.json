@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "siroc": "^0.16.0",
     "eslint": "^8.12.0",
+    "siroc": "^0.16.0",
     "standard-version": "^9.3.2"
   }
 }
