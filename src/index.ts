@@ -76,7 +76,11 @@ const gitmojis = {
 export function convert(content: string, withSpace?: boolean) {
   if (!withSpace) withSpace = false;
   Object.entries(gitmojis).forEach(([key, value]) => {
-    content = content.replaceAll(key, value);
+    if (withSpace) {
+      content = content.replaceAll(key, value + " ");
+    } else {
+      content = content.replaceAll(key, value);
+    }
   });
   return content;
 }
