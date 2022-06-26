@@ -1,6 +1,6 @@
 {
   "name": "convert-gitmoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "♻️ Convert strings to gitmojis",
   "license": "MIT",
   "author": "Conner Luka Bachmann <mail@conner-bachmann.de>",
