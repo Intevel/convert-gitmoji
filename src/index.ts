@@ -74,13 +74,14 @@ const gitmojis = {
 };
 
 export function convert(content: string, withSpace?: boolean) {
-  if (!withSpace) withSpace = false;
-  Object.entries(gitmojis).forEach(([key, value]) => {
-    if (withSpace) {
-      content = content.replaceAll(key, value + " ");
-    } else {
-      content = content.replaceAll(key, value);
-    }
-  });
-  return content;
+	var re = new RegExp(Object.keys(gitmojis).join("|"), "gi");
+	return content.replace(re, function(matched) {
+		if (withSpace) {
+			// @ts-ignore
+			return gitmojis[matched.toLowerCase()] + " ";
+		} else {
+			// @ts-ignore
+			return gitmojis[matched.toLowerCase()];
+		}
+	})
 }
