@@ -4,7 +4,16 @@
   "description": "♻️ Convert strings to gitmojis",
   "license": "MIT",
   "author": "Conner Luka Bachmann <mail@conner-bachmann.de>",
-  "main": "dist/index.mjs",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "files": [
     "dist"
   ],
