@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/Intevel/convert-gitmoji/compare/v0.0.3...v1.0.1) (2022-06-27)
+
+
+### Bug Fixes
+
+* **ci:** updated node version ([f9126ff](https://github.com/Intevel/convert-gitmoji/commit/f9126ffb23f55f0739c0e5bff9f123021e1bc2a2))
+
 ### [0.0.3](https://github.com/Intevel/convert-gitmoji/compare/v0.0.2...v0.0.3) (2022-06-27)
 
 
