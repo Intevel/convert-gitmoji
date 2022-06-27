@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/Intevel/convert-gitmoji/compare/v0.0.2...v0.0.3) (2022-06-27)
+
+
+### Features
+
+* **chore:** added test/code example :memo: ([93732e7](https://github.com/Intevel/convert-gitmoji/commit/93732e7baa6b29e5e02f12a7edbc6370dfc6bff8))
+* **chore:** improved performance using regex ([d7a5abb](https://github.com/Intevel/convert-gitmoji/commit/d7a5abb41161f907a0cedb5a40e833bec6c952c7))
+* **chore:** migrated to unbuild@0.7.4 ([fef82d5](https://github.com/Intevel/convert-gitmoji/commit/fef82d5f934f4b75231f5df2f47642ae1823fd20))
+
+
+### Bug Fixes
+
+* **chore:** optimized build settings ([e767622](https://github.com/Intevel/convert-gitmoji/commit/e767622bf7634efcb6f2ce63bc2369e2478b6bdf))
+
 ### 0.0.2 (2022-06-26)
 
 
