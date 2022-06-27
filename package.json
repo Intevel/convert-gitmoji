@@ -4,13 +4,12 @@
   "description": "♻️ Convert strings to gitmojis",
   "license": "MIT",
   "author": "Conner Luka Bachmann <mail@conner-bachmann.de>",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.mjs",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "siroc build",
+    "build": "unbuild",
     "lint": "eslint --ext .ts .",
     "release": "yarn build && standard-version && git push --follow-tags && npm publish"
   },
@@ -20,7 +19,7 @@
   "devDependencies": {
     "@types/node": "^17.0.23",
     "eslint": "^8.12.0",
-    "siroc": "^0.16.0",
-    "standard-version": "^9.3.2"
+    "standard-version": "^9.3.2",
+    "unbuild": "^0.7.4"
   }
 }
