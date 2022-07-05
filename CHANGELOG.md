@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/Intevel/convert-gitmoji/compare/v0.9.10...v0.1.1) (2022-07-05)
+
+
+### Features
+
+* **chore:** fixed version ([bcd8fd9](https://github.com/Intevel/convert-gitmoji/commit/bcd8fd971bcbacb936ffa93fa2799cc66af7e266))
+* **chore:** v0.1.0 ([cc435d7](https://github.com/Intevel/convert-gitmoji/commit/cc435d7ba710cdb94f1c07121fa002877ba74a63))
+* **chore:** v1.0.0 ([70bebdc](https://github.com/Intevel/convert-gitmoji/commit/70bebdcb8bd74b813692121fc37ff3e34b4f4001))
+* **convert:** :sparkles:  Added whitespace options ([47d7d61](https://github.com/Intevel/convert-gitmoji/commit/47d7d610f65d96ea891d012d7580e1239ee20d9d))
+* **convert:** Added whitespace options ([a403a3f](https://github.com/Intevel/convert-gitmoji/commit/a403a3fda1334a750bc13d0a672c672917b7adb3)), closes [#4](https://github.com/Intevel/convert-gitmoji/issues/4)
+
+
+### Bug Fixes
+
+* **chore:** bumped version ([07a9c93](https://github.com/Intevel/convert-gitmoji/commit/07a9c93820a42d0f58bb3b08f2b4da4afc9bdf02))
+* **chore:** removed yarn error log ([418a0da](https://github.com/Intevel/convert-gitmoji/commit/418a0da789beb28757208d42ade07ca8af741cf8))
+
 ### [0.9.10](https://github.com/Intevel/convert-gitmoji/compare/v0.0.3...v0.9.10) (2022-06-27)
 
 
