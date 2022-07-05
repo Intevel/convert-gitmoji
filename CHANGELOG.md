@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/Intevel/convert-gitmoji/compare/v0.1.1...v0.1.2) (2022-07-05)
+
+
+### Bug Fixes
+
+* **chore:** added types option to package.json ([a46ddff](https://github.com/Intevel/convert-gitmoji/commit/a46ddff1d097c36b48e2fe66cb6dec54a9df9f75))
+
 ### [0.1.1](https://github.com/Intevel/convert-gitmoji/compare/v0.9.10...v0.1.1) (2022-07-05)
 
 
