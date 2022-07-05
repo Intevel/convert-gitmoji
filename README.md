@@ -20,10 +20,12 @@ yarn add convert-gitmoji
 
 ## Usage
 
-### `convert(content: string, withSpace?: boolean)`
+### `convert(content: string, withSpace?: boolean | "leading" | "trailing" | "both")`
 
 Convert all gitmojis in a string
-`withSpace` is default `false`, if `true` its sets a " " after the converted gitmoji
+`withSpace` is default `false`, if `true` its sets a trailing (at the end of the string) whitespace after the converted gitmoji.
+
+For more control, `withSpace` can also be set to `leading` for a whitespace *before the string*, `trailing` for a whitespace *at the end of the string* (same as `true`) or `both` to have the string surrounded by whitespaces.
 
 ```js
 // CommonJS
@@ -35,6 +37,14 @@ import { convert } from "convert-gitmoji";
 convert(':arrow_up: bump qs from 6.10.3 to 6.10.4 (xxx) - **helper:** :pencil:  Updated TSDoc (xxx)', true);
 
 --> "⬆️ bump qs from 6.10.3 to 6.10.4 (xxx) - **helper:** ✏️ Updated TSDoc (xxx)"
+
+convert("This:art:is on:fire:!")
+
+--> "This🎨is on🔥!"
+
+convert("This:art:is on:fire:!", "both")
+
+--> "This 🎨 is on 🔥 !"
 ```
 
 ## License
