@@ -291,8 +291,8 @@ const gitmojis = [
 const content = ":arrow_up: bump qs from 6.10.3 to 6.10.4 (xxx) - **helper:** :zap:  Updated TSDoc (xxx) ";
 const contentWithGitmoji = "⬆️ bump qs from 6.10.3 to 6.10.4 (xxx) - **helper:** ⚡️  Updated TSDoc (xxx) ";
 
-const pencil = "this is :pencil: 1 and this is :pencil2:"
-const pencilWithGitmoji = "this is ✏️ 1 and this is ✏️"
+const pencil = "this is :pencil: 1 and this is :pencil2:";
+const pencilWithGitmoji = "this is ✏️ 1 and this is ✏️";
 
 describe('convert', () => {
   it('should be defined', () => {
@@ -302,14 +302,27 @@ describe('convert', () => {
   it('should return the correct gitmoji for every string', () => {
     let gitmojisEqual = true;
     for (const gitmoji of gitmojis) {
-      gitmojisEqual = convert(gitmoji.code) === gitmoji.emoji || gitmojisEqual;
+      gitmojisEqual = convert(gitmoji.code) === gitmoji.emoji && gitmojisEqual;
     }
     expect(gitmojisEqual).toBe(true);
   });
 
-  it('should generate space', () => {
-    const gitmojiWithSpace = convert(gitmojis[0].code, true);
+  it('should generate leading space', () => {
+    const gitmojiWithSpace = convert(gitmojis[0].code, "leading");
+    expect(gitmojiWithSpace).toBe(` ${gitmojis[0].emoji}`);
+  });
+
+  it('should generate trailing space', () => {
+    const gitmojiWithSpace = convert(gitmojis[0].code, "trailing");
     expect(gitmojiWithSpace).toBe(`${gitmojis[0].emoji} `);
+    // Backwards compatibility
+    const gitmojiWithSpace2 = convert(gitmojis[0].code, true);
+    expect(gitmojiWithSpace2).toBe(`${gitmojis[0].emoji} `);
+  });
+
+  it('should generate both spaces', () => {
+    const gitmojiWithSpace = convert(gitmojis[0].code, "both");
+    expect(gitmojiWithSpace).toBe(` ${gitmojis[0].emoji} `);
   });
 
   it('should not generate space', () => {

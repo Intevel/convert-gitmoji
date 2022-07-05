@@ -5,5 +5,12 @@
   },
   "env": {
     "es6": true
-  }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ]
 }

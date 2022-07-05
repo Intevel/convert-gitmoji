@@ -1,4 +1,4 @@
-const gitmojis = {
+const gitmojis: Record<string, string> = {
   ":art:": "🎨",
   ":zap:": "⚡️",
   ":fire:": "🔥",
@@ -15,7 +15,7 @@ const gitmojis = {
   ":bookmark:": "🔖",
   ":rotating_light:": "🚨",
   ":construction:": "🚧",
-  ":green_heart": "💚",
+  ":green_heart:": "💚",
   ":arrow_down:": "⬇️",
   ":arrow_up:": "⬆️",
   ":pushpin:": "📌",
@@ -73,15 +73,19 @@ const gitmojis = {
   ":money_with_wings:": "💸",
 };
 
-export function convert(content: string, withSpace?: boolean) {
-	var re = new RegExp(Object.keys(gitmojis).join("|"), "gi");
-	return content.replace(re, function(matched) {
-		if (withSpace) {
-			// @ts-ignore
-			return gitmojis[matched.toLowerCase()] + " ";
-		} else {
-			// @ts-ignore
-			return gitmojis[matched.toLowerCase()];
-		}
-	})
+export function convert(content: string, withSpace?: boolean | "leading" | "trailing" | "both") {
+  const re = new RegExp(Object.keys(gitmojis).join("|"), "gi");
+  return content.replace(re, function (matched) {
+    switch (withSpace) {
+      case true:
+      case "trailing":
+        return `${gitmojis[matched.toLowerCase()]} `
+      case "leading":
+        return ` ${gitmojis[matched.toLowerCase()]}`
+      case "both":
+        return ` ${gitmojis[matched.toLowerCase()]} `
+      default:
+        return gitmojis[matched.toLowerCase()]
+    }
+  });
 }
