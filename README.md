@@ -5,7 +5,7 @@
 [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
 [![License][license-src]][license-href]
 
-Simple way to convert strings to gitmojis ♻️
+Simple way to replace strings with gitmojis ♻️
 
 ## Install
 
