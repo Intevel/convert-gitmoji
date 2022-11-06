@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v0.1.3
+
+
+### 🚀 Enhancements
+
+  - Switched to changelogen (354c77f)
+  - **emojis:** Added 🧵 & 🦺 (f7517e5)
+
+### 🩹 Fixes
+
+  - **chore:** Updated description (cddb0f8)
+  - **chore:** Removed lock file (a4745e7)
+
+### ❤️  Contributors
+
+- Conner
+- Conner Bachmann
+
 ### [0.1.2](https://github.com/Intevel/convert-gitmoji/compare/v0.1.1...v0.1.2) (2022-07-05)
 
 
