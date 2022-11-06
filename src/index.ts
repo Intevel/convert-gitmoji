@@ -71,6 +71,8 @@ const gitmojis: Record<string, string> = {
   ":bricks:": "🧱",
   ":technologist:": "🧑‍💻",
   ":money_with_wings:": "💸",
+  ":thread:": "🧵",
+  ":safety_vest:": "🦺"
 };
 
 export function convert(content: string, withSpace?: boolean | "leading" | "trailing" | "both") {
