@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v0.1.5
+
+
+### 🩹 Fixes
+
+  - Type exports (4d1eb4a)
+
+### ❤️  Contributors
+
+- Conner Bachmann
+
 ## v0.1.4
 
 
