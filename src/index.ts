@@ -1,4 +1,4 @@
-const gitmojis: Record<string, string> = {
+export const gitmojis: Record<string, string> = {
   ":art:": "🎨",
   ":zap:": "⚡️",
   ":fire:": "🔥",
@@ -72,22 +72,25 @@ const gitmojis: Record<string, string> = {
   ":technologist:": "🧑‍💻",
   ":money_with_wings:": "💸",
   ":thread:": "🧵",
-  ":safety_vest:": "🦺"
+  ":safety_vest:": "🦺",
 };
 
-export function convert(content: string, withSpace?: boolean | "leading" | "trailing" | "both") {
+export function convert(
+  content: string,
+  withSpace?: boolean | "leading" | "trailing" | "both"
+) {
   const re = new RegExp(Object.keys(gitmojis).join("|"), "gi");
   return content.replace(re, function (matched) {
     switch (withSpace) {
       case true:
       case "trailing":
-        return `${gitmojis[matched.toLowerCase()]} `
+        return `${gitmojis[matched.toLowerCase()]} `;
       case "leading":
-        return ` ${gitmojis[matched.toLowerCase()]}`
+        return ` ${gitmojis[matched.toLowerCase()]}`;
       case "both":
-        return ` ${gitmojis[matched.toLowerCase()]} `
+        return ` ${gitmojis[matched.toLowerCase()]} `;
       default:
-        return gitmojis[matched.toLowerCase()]
+        return gitmojis[matched.toLowerCase()];
     }
   });
 }
