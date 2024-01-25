@@ -1,6 +1,6 @@
 {
   "name": "convert-gitmoji",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": "Intevel/convert-gitmoji",
   "description": "♻️ Convert strings to gitmojis",
   "license": "MIT",

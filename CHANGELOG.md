@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v0.1.4
+
+
+### 🩹 Fixes
+
+  - Export gitmojis (1c23ab3)
+
+### 🏡 Chore
+
+  - Add repository to package.json (137dd6f)
+  - Fix typo (17d0480)
+
+### ❤️  Contributors
+
+- Conner Bachmann
+- Wilson Pinto
+
 ## v0.1.3
 
 
